@@ -1,3 +1,4 @@
+package sorting;
 class insertion{
     void insert(int arr[], int i)
     {
