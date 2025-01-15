@@ -1,8 +1,6 @@
 package array;
 
 public class secondLargest {
-    // User function template for C++
-class Solution {
       // Function returns the second
       // largest elements
       public int getSecondLargest(int []arr) {
@@ -21,5 +19,4 @@ class Solution {
           }
           return sec_max;
       }
-  }
 }

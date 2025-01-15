@@ -1,10 +1,5 @@
 package sorting;
 public class recursiveInsertionSort {
-    
-
-/* The task is to complete insert() which is used 
-   as shown below to implement insertionSort() */
-
 
    void insert(int arr[], int i)
    {
@@ -17,9 +12,7 @@ public class recursiveInsertionSort {
                 arr[j] = temp;
                }
            temp = 0;
-       }
-               
-       
+       }   
    }
    //Function to sort the array using insertion sort algorithm.
    void insertionSort(int arr[], int n)
@@ -31,7 +24,4 @@ public class recursiveInsertionSort {
          insert(arr,n-1);
          insertionSort(arr,n-1);
    }
-
-
-
 }
