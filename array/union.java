@@ -15,28 +15,28 @@ public class union {
                 if(a[i] <= b[j]) {
                     if(arr.size() == 0 || arr.get(arr.size()-1) != a[i]) {
                         arr.add(a[i]);
-                        i++;
                     }
+                        i++;
                 } else {
                     if(arr.size() == 0 || arr.get(arr.size()-1) != b[j]) {
                     arr.add(b[j]);
-                    j++;
                     }
+                    j++;
                 }
             }
             
             while(i<m) {
                 if(arr.get(arr.size()-1) != a[i]) {
                     arr.add(a[i]);
-                    i++;
                 }
+                    i++;
             }
             
             while(j<n) {
                 if(arr.get(arr.size()-1) != b[j]) {
                     arr.add(b[j]);
-                    j++;
                 }
+                    j++;
             }
             
             return arr;
