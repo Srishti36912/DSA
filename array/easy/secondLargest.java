@@ -1,4 +1,4 @@
-package array;
+package array.easy;
 
 public class secondLargest {
       // Function returns the second
