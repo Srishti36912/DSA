@@ -20,7 +20,7 @@ public class longestSubarrayP {
                 maxLen = Math.max(maxLen, right - left + 1);
             }
 
-            // Move forward thw right pointer:
+            // Move forward the right pointer:
             right++;
             if (right < n) sum += a[right];
         }
