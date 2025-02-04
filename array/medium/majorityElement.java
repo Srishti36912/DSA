@@ -16,6 +16,8 @@ public class majorityElement {
                 count--;
             }
         }
+
+        // needs to be written if only majority element may or may not be present otherwise skip this
         int count1 = 0;
         for(int i=0; i<nums.length; i++) {
             if(nums[i] == el) {
