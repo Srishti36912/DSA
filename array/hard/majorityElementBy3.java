@@ -2,6 +2,7 @@ package array.hard;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 
 public class majorityElementBy3 {
     public List<Integer> majorityElement(int[] nums) {
