@@ -2,7 +2,6 @@ package array.hard;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
 
 public class majorityElementBy3 {
     public List<Integer> majorityElement(int[] nums) {
@@ -13,12 +12,12 @@ public class majorityElementBy3 {
 
         for(int i=0; i<n; i++) { 
             if(el2 != nums[i] && count1 == 0) {
-                count2++;
-                el2 = nums[i];
-            }
-            else if(el1 != nums[i] && count2 == 0) {
                 count1++;
                 el1 = nums[i];
+            }
+            else if(el1 != nums[i] && count2 == 0) {
+                count2++;
+                el2 = nums[i];
             }
             else if(nums[i] == el1) {
                 count1++;
@@ -42,11 +41,11 @@ public class majorityElementBy3 {
                 main_count2++;
             }
         }
-        int mini = (int)(n/3) + 1;
-        if(main_count1 >= mini) {
+        int mini = (int)(n/3);
+        if(main_count1 > mini) {
             list.add(el1);
         }
-        if(main_count2 >= mini) {
+        if(main_count2 > mini) {
             list.add(el2);
         }
         return list;
