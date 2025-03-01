@@ -4,25 +4,50 @@ import java.util.*;
 public class mergeIntervals {
     public int[][] merge(int[][] intervals) {
         int n = intervals.length;
-        int m = intervals[0].length;
-        Arrays.sort(intervals, new Comparator<int[]>() {
-            public int compare(int[] a, int[] b) {
-                return a[0] - b[0];
-            }
-        });
-        // int arr[][] = new int[n][m];
-        List<List<Integer>> arr = new ArrayList<>();
+        if(n <= 1) {
+            return intervals;
+        }
+        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        List<int[]> arr = new ArrayList<>();
+        int prev[] = intervals[0];
 
-        for(int i=0; i<n; i++) {
-            if(arr.isEmpty() || intervals[i][0] > arr.get(arr.size()-1).get(1)) {
-                arr.add(Arrays.asList(intervals[i][0], intervals[i][1]));
+        for(int i=1; i<n; i++) {
+            if(intervals[i][0] <= prev[1]) {
+                prev[1] = Math.max(prev[1], intervals[i][1]);
             }
             else {
-                // arr[i][1] = Math.max(intervals[i][1], arr[i][1]);
-                arr.get(arr.size() - 1).set(1, Math.max(arr.get(arr.size() - 1).get(1), intervals[1][1]));
-
+                arr.add(prev);
+                prev = intervals[i];
             }
         }
         return arr.toArray(new int[arr.size()][]);
     }
+
+    public static List<List<Integer>> mergeOverlappingIntervals(int[][] arr) {
+        int n = arr.length; // size of the array
+        //sort the given intervals:
+        Arrays.sort(arr, new Comparator<int[]>() {
+            public int compare(int[] a, int[] b) {
+                return a[0] - b[0];
+            }
+        });
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        for (int i = 0; i < n; i++) {
+            // if the current interval does not
+            // lie in the last interval:
+            if (ans.isEmpty() || arr[i][0] > ans.get(ans.size() - 1).get(1)) {
+                ans.add(Arrays.asList(arr[i][0], arr[i][1]));
+            }
+            // if the current interval
+            // lies in the last interval:
+            else {
+                ans.get(ans.size() - 1).set(1,
+                                            Math.max(ans.get(ans.size() - 1).get(1), arr[i][1]));
+            }
+        }
+        return ans;
+    }
+
 }
