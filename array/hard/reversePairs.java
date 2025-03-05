@@ -64,11 +64,4 @@ public class reversePairs {
     public static int team(int[] skill, int n) {
         return mergeSort(skill, 0, n - 1);
     }
-
-    public static void main(String[] args) {
-        int[] a = {4, 1, 2, 3, 1};
-        int n = 5;
-        int cnt = team(a, n);
-        System.out.println("The number of reverse pair is: " + cnt);
-    }
 }
