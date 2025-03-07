@@ -1,9 +1,7 @@
 package array.hard;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class reversePairs {
-
     private static void merge(int[] arr, int low, int mid, int high) {
         ArrayList<Integer> temp = new ArrayList<>(); // temporary array
         int left = low;      // starting index of left half of arr
@@ -39,13 +37,12 @@ public class reversePairs {
             arr[i] = temp.get(i - low);
         }
     }
-
     public static int countPairs(int[] arr, int low, int mid, int high) {
-        int right = mid + 1;
         int cnt = 0;
-        for (int i = low; i <= mid; i++) {
-            while (right <= high && arr[i] > 2 * arr[right]) right++;
-            cnt += (right - (mid + 1));
+        int right = mid + 1;
+        for(int i=low; i<=mid; i++) {
+            while(right <= high && (long) arr[i] > 2L * arr[right]) right++;
+            cnt += (right - (mid + 1)); 
         }
         return cnt;
     }
@@ -56,12 +53,13 @@ public class reversePairs {
         int mid = (low + high) / 2 ;
         cnt += mergeSort(arr, low, mid);  // left half
         cnt += mergeSort(arr, mid + 1, high); // right half
-        cnt += countPairs(arr, low, mid, high); //Modification
+        cnt += countPairs(arr, low, mid, high);
         merge(arr, low, mid, high);  // merging sorted halves
         return cnt;
     }
 
-    public static int team(int[] skill, int n) {
-        return mergeSort(skill, 0, n - 1);
+    public static int reversePairs(int[] nums) {
+        int n = nums.length;
+        return mergeSort(nums, 0, n-1);
     }
 }
