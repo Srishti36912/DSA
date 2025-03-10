@@ -1,4 +1,4 @@
-package LinkedList.oneD_LinkedList;
+package LinkedList.oneDimensionalLL;
 
 class Node{
     int data;
