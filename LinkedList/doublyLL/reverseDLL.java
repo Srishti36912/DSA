@@ -13,7 +13,7 @@ class DLLNode {
 }
 
 public class reverseDLL {
-    public DLLNode reverseDLL(DLLNode head) {
+    public DLLNode reverse(DLLNode head) {
         // Your code here
         if(head == null || head.next == null) {
             return head;
