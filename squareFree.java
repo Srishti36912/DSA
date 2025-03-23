@@ -1,16 +1,16 @@
 import java.util.*;
 public class squareFree {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+         Scanner sc = new Scanner(System.in);
         int count=0;
          int N = sc.nextInt();
 
          for(int i=2; i<= Math.sqrt(N); i++) {
             if (N % i == 0) {
-                if(squareFree(i)) {
+                if(squarefree(i)) {
                     count++;
                 }
-                if(squareFree(N/i)) {
+                if(squarefree(N/i)) {
                     count++;
                 }
             }
@@ -18,7 +18,7 @@ public class squareFree {
          System.out.println(count);
     }
 
-    public static boolean squareFree(int n) {
+    public static boolean squarefree(int n) {
         
             if(n % 2 == 0) {
                 n = n/2;

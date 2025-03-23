@@ -2,7 +2,7 @@ package sorting;
 
 import java.util.ArrayList;
 
-public class mergeSort {
+public class MergeSort {
     void mergeSort(int arr[], int l, int r) {
         // code here
         if(l >=r) {

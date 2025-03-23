@@ -1,6 +1,6 @@
 package sorting;
 
-public class quickSort {
+public class QuickSort {
     //User function Template for C
 
     //Function to sort an array using quick sort algorithm.
