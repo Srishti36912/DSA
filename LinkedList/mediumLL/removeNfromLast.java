@@ -1,3 +1,4 @@
+package LinkedList.mediumLL;
 
 class Node {
     public int data;
@@ -16,7 +17,7 @@ class Node {
     }
 }
 
-public class Main {
+public class removeNfromLast {
     // Function to print the linked list
     public static void printLL(Node head) {
         while (head != null) {
