@@ -3,6 +3,7 @@ package LinkedList.mediumLL;
 import java.lang.classfile.components.ClassPrinter.ListNode;
 
 public class sortLL {
+    // sorting linked list using merge sort
     public ListNode sortList(ListNode head) {
         if(head == null || head.next == null) {
             return head;
