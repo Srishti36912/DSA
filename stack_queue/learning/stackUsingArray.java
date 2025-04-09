@@ -1,4 +1,4 @@
-package stack queue.learning;
+package stack_queue.learning;
 
 public class stackUsingArray {
     private int[] arr;
