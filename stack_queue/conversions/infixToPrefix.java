@@ -85,14 +85,10 @@ class infixToPrefix {
       // Operator found
       else {
         if (isOperator(char_stack.peek())) {
-          while ((getPriority(infix.charAt(i)) <
-        getPriority(char_stack.peek())) 
-                ||
-        (getPriority(infix.charAt(i)) <=
-        getPriority(char_stack.peek()) &&
-                    infix.charAt(i) == '^')) {
-                    output += char_stack.peek();
-                    char_stack.pop();
+          while ((getPriority(infix.charAt(i)) < getPriority(char_stack.peek())) ||
+           (getPriority(infix.charAt(i)) < getPriority(char_stack.peek()) && infix.charAt(i) == '^')) {
+            output += char_stack.peek();
+            char_stack.pop();
           }
 
           // Push current Operator on stack
