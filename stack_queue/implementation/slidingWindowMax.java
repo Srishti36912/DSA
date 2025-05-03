@@ -1,4 +1,4 @@
-package stack_queue.monotonic_stack;
+package stack_queue.implementation;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
