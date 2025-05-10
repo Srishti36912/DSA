@@ -94,7 +94,7 @@ public class LFUCache {
             nextNode.prev = node;
             listSize++;
         }
-        public void removeNode(Node node) {
+        public void removeNode(Node node) { // to remove a node from the list
             Node prevNode = node.prev;
             Node nextNode = node.next;
             prevNode.next = nextNode;
