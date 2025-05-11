@@ -9,7 +9,7 @@ public class LFUCache {
     HashMap<Integer, Node> cache;
     HashMap<Integer, DLList> freqMap;
 
-    public LFUCache(int capacity) {
+    public LFUCache(int capacity) { // constructor
         this.capacity = capacity;
         this.currSize = 0;
         this.minFreq = 0;
@@ -17,7 +17,7 @@ public class LFUCache {
         this.freqMap = new HashMap<>();
     }
     
-    public int get(int key) {
+    public int get(int key) { // to get the value of the key
        Node currNode = cache.get(key);
        if(currNode == null) {
             return -1;
