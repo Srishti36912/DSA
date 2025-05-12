@@ -26,7 +26,7 @@ public class LFUCache {
        return currNode.val;
     }
     
-    public void put(int key, int value) {
+    public void put(int key, int value) { // to add a key-value pair
         if(capacity == 0) {
             return;
         }
