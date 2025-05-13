@@ -51,7 +51,7 @@ public class LFUCache {
             cache.put(key, node);
         }
     }
-    public void updateNode(Node node) {
+    public void updateNode(Node node) { // to update the frequency of the node
         int freq = node.frequency;
         DLList list = freqMap.get(freq);
         list.removeNode(node);
