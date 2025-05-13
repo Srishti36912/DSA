@@ -63,7 +63,7 @@ public class LFUCache {
         newList.addNode(node);
         freqMap.put(node.frequency, newList);
     }
-    class Node {
+    class Node { // to create a node
         int key;
         int val;
         int frequency;
@@ -75,7 +75,7 @@ public class LFUCache {
             this.frequency = 1;
         }
     }
-    class DLList {
+    class DLList { // doubly linked list
         int listSize;
         Node head;
         Node tail;
