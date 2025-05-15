@@ -13,7 +13,6 @@ class Node {
 
 public class arrToDLL {
     Node constructDLL(int arr[]) {
-        // Code here
         Node head = new Node(arr[0]);
         
         Node temp = head;
