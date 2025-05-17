@@ -86,7 +86,7 @@ public class LFUCache {
             head.next = tail;
             tail.prev = head;
         }
-        public void addNode(Node node) {
+        public void addNode(Node node) { // to add a node to the list
             Node nextNode = head.next;
             node.next = nextNode;
             node.prev = head;
