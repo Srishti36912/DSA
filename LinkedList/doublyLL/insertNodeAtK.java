@@ -14,7 +14,6 @@ class Node
 
 public class insertNodeAtK {
     Node addNode(Node head, int p, int x) {
-        // Your code here
         Node newNode = new Node(x);
         Node current = head;
         int i = 0;

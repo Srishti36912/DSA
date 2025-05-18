@@ -14,7 +14,6 @@ class Node {
 
 public class deleteInDLL {
     public Node deleteNode(Node head, int x) {
-        // code here
         if(head == null) {
             return null;
         }
