@@ -2,7 +2,6 @@ package LinkedList.hardLL;
 
 public class flattenLL {
     Node flatten(Node root) {
-        // code here
         if(root == null || root.next == null) {
             return root;
         }
