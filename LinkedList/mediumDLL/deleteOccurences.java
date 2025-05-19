@@ -2,7 +2,6 @@ package LinkedList.mediumDLL;
 
 public class deleteOccurences {
     static Node deleteAllOccurOfX(Node head, int x) {
-        // Write your code here
         Node temp = head;
         
         while(temp != null) {
