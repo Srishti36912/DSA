@@ -2,7 +2,6 @@ package LinkedList.mediumDLL;
 
 public class removeDuplicatesFromDLL {
     Node removeDuplicates(Node head){
-        // Code Here.
         Node temp = head.next;
         
         if(head == null || head.next == null) {

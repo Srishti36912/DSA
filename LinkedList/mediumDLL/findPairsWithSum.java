@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 public class findPairsWithSum {
     public static ArrayList<ArrayList<Integer>> findPairsWithGivenSum(int target, Node head) {
-        // code here
         Node left = head;
         Node right = findTail(head);
         ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
