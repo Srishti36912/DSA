@@ -10,7 +10,6 @@ class Node {
 
 public class ArrayToLL {
     static Node constructLL(int arr[]) {
-        // code here
         if(arr.length == 0) return null;
         
         Node head = new Node(arr[0]);
