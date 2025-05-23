@@ -1,6 +1,7 @@
 package string.easy;
 
 public class reverseWordsSpaces {
+    // removing extra spaces in between words as well as at the ends
     public String reverseWords(String s) {
       String[] words = s.split("\\s+");
       StringBuilder res = new StringBuilder();
