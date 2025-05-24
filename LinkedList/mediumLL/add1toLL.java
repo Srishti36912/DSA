@@ -2,7 +2,6 @@ package LinkedList.mediumLL;
 
 public class add1toLL {
     public Node addOne(Node head) {
-        // code here.
         int carry = helper(head);
         if(carry == 1) {
             Node newNode = new Node(1);
