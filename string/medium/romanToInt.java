@@ -2,7 +2,7 @@ package string.medium;
 
 public class romanToInt {
     public int romanToInt(String s) {
-        int ans = 0, num = 0;
+        int ans = 0, num = 0, prev = 0;
         
         for(int i=s.length()-1; i>=0; i--) {
             switch(s.charAt(i)) {
@@ -29,11 +29,12 @@ public class romanToInt {
                     break;
             }
 
-            if(4 * num < ans) {
+            if(num < prev) {
                 ans -= num;
             } else {
                 ans += num;
             }
+            prev = num;
         }
         return ans;
     }
