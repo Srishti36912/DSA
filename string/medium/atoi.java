@@ -1,6 +1,6 @@
 package string.medium;
 
-public class atoi {
+public class atoi { // Implement atoi (string to integer)
     public int myAtoi(String s) {
         s = s.trim();
         int sign = 1, i = 0;
