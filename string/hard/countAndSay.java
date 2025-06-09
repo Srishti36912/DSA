@@ -1,7 +1,7 @@
 package string.hard;
 
 public class countAndSay {
-    public String countAndSay(int n) {
+    public String countSay(int n) {
         String res = "1";
         for(int i=1; i<n; i++) {
             res = buildNext(res);
