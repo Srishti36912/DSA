@@ -10,8 +10,7 @@ public class combinationSum {
        return ans;
     }
 
-    public void findCombinations(int ind, int[] candidates, int target, 
-    List<List<Integer>> ans, List<Integer> ds) {
+    public void findCombinations(int ind, int[] candidates, int target, List<List<Integer>> ans, List<Integer> ds) {
         if(ind == candidates.length) {
             if(target == 0) {
                 ans.add(new ArrayList(ds));
