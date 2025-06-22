@@ -5,9 +5,9 @@ class Node {
     Node prev;
     Node next;
     Node(int d)  { 
-        data = d;  
-        prev = null; 
-        next = null; 
+        data = d;
+        prev = null;
+        next = null;
     }
 }
 
