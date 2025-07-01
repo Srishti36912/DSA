@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class palindromePartitioning {
-    public List<List<String>> partition(String s) {
+    public List<List<String>> partitionP(String s) {
         List<List<String>> res = new ArrayList<>();
         List<String> ds = new ArrayList<>();
         partition(0, s, res, ds);
