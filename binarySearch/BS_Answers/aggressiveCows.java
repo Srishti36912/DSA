@@ -5,7 +5,6 @@ import java.util.Arrays;
 public class aggressiveCows {
     
     public int aggressiveCows(int[] stalls, int k) {
-        // code here
         int n = stalls.length;
         Arrays.sort(stalls);
         int low = 1, high = stalls[n - 1] - stalls[0];
