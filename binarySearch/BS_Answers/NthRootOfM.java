@@ -3,7 +3,6 @@ package binarySearch.BS_Answers;
 public class NthRootOfM {
     
     public int nthRoot(int n, int m) {
-        // code here
         int low = 1, high = m;
         
         while(low <= high) {
