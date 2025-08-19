@@ -1,4 +1,4 @@
-package bitManipulation.learn;
+package bitManipulation.interviewProblems;
 
 public class minFlipBits {
     
