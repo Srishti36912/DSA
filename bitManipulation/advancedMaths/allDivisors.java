@@ -6,7 +6,6 @@ import java.util.Collections;
 public class allDivisors {
     
     public static void print_divisors(int n) {
-        // code here
         ArrayList<Integer> ans = new ArrayList<>();
         int sqrtN = (int) Math.sqrt(n);
         
