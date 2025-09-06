@@ -8,9 +8,7 @@ public class primeFactorsUsingSieve {
     static int spf[] = new int[MAXN+1];
     
     static void sieve() {
-        // spf[0] = 0;
-        // spf[1] = 1;
-        
+
         for(int i=1; i<=MAXN; i++) {
             spf[i] = i;
         }
