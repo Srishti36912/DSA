@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class primeFactors {
     
     public static ArrayList<Integer> primeFac(int n) {
-        // code here
         ArrayList<Integer> result = new ArrayList<>();
         
         for(int i=2; i<=n; i++) {
