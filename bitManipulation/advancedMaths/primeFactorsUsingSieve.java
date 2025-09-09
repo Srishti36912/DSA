@@ -25,7 +25,6 @@ public class primeFactorsUsingSieve {
     }
 
     static List<Integer> findPrimeFactors(int N) {
-        // code here
         List<Integer> ret = new ArrayList<>();
         
         while(N > 1) {
