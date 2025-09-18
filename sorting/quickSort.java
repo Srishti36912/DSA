@@ -20,13 +20,12 @@ public class QuickSort {
         
     int partition (int arr[], int low, int high)
     {
-    // Your code here
-    int pivot = arr[low];
-    int i = low;
-    int j = high;
-    int temp;
-    
-    while(i < j) {
+        int pivot = arr[low];
+        int i = low;
+        int j = high;
+        int temp;
+        
+        while(i < j) {
             while(arr[i] <= pivot && i <= high-1) {
                 i++;
             }
@@ -41,13 +40,13 @@ public class QuickSort {
                 arr[i] = arr[j];
                 arr[j] = temp;
             }
-            }
-    
-            temp = arr[low];
-            arr[low] = arr[j];
-            arr[j] = temp;
-            
-            return j;
-            
+        }
+
+        temp = arr[low];
+        arr[low] = arr[j];
+        arr[j] = temp;
+        
+        return j;
+                
     }
 }
